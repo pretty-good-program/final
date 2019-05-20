@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Final2
+{
+    public static void main(String[] args) {
+        int userEntry;
+        String result;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Welcome to my game.\n");
+        System.out.println("Its called Roulette\n");
+        System.out.println("Enter an even or odd number >>>>>\n");
+        System.out.println("Enter a number low number 1-18 ora high number 19-36 >>>>>\n");
+        userEntry = input.nextInt();
+        int random = (int) (Math.random() * 36);
+
+        if (userEntry % 2 == 0) {
+            result = "number is Even";
+        }else
+            result = userEntry + "number is Odd";
+
+        if(userEntry < 18) {
+            result = "number is Low";
+        }
+        if(userEntry > 19) {
+            result = "number is High";
+        }
+        if(userEntry == random){
+            result ="You Win";
+        }
+        System.out.println(result);
+    }
+}
