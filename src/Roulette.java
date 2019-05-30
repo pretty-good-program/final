@@ -5,12 +5,13 @@ public class Roulette
     public static void main(String[] args){
         int userEntry;
         String result;
+        String result2 =null;
         Scanner input = new Scanner(System.in);
         System.out.println("Welcome to my game.\n");
         System.out.println("Its called Roulette\n");
+
         System.out.println("Enter an even or odd number >>>>>\n");
         userEntry = input.nextInt();
-        int random = (int) (Math.random() * 36);
 
         if (userEntry % 2 == 0) {
             result = "number is Even";
@@ -23,11 +24,17 @@ public class Roulette
         userEntry = input.nextInt();
 
         if(userEntry < 18) {
-            result = "number is Low";
+            result2 = "number is Low";
         }
         if(userEntry > 19) {
-            result = "number is High";
+            result2 = "number is High";
         }
+
+        System.out.println(result2);
+
+        int random = (int) (Math.random() * 36);
+        System.out.println("Spin the Wheel");
+
         if(userEntry == random){
             result ="You Win";
         }
