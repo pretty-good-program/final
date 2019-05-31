@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class BlackJack{
 
 
-    public static void runBlackJack() {
+    public static void runBlackJack(){
         Scanner input = new Scanner(System.in);
         int userChoice;
         String result;
