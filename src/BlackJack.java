@@ -57,8 +57,8 @@ public class BlackJack{
 
             System.out.println("Would the computer like to 1 for hit or 2 to stay? ");
 
-            int hitOrStay = rand.nextInt(hitOrStay.length);
-            if (hitOrStay == 1) {
+            int hos = rand.nextInt(hitOrStay.length);
+            if (hos == 1) {
                 int ca = rand.nextInt(allCards.length);
                 newComputerTotal = allCards[ca] + computerTotal;
                 System.out.println("The value of the computer card is " + allCards[ca]);
